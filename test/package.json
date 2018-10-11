@@ -1,0 +1,26 @@
+{
+  "name": "faxtxmlparser",
+  "version": "0.0.1",
+  "description": "a real fast xmlParser, code is no fun",
+  "main": "htmlParser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camen6ert/fastXmlParser.git"
+  },
+  "keywords": [
+    "xmlparser",
+    "fast",
+    "htmlparser",
+    "html",
+    "parser"
+  ],
+  "author": "camen6ert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camen6ert/fastXmlParser/issues"
+  },
+  "homepage": "https://github.com/camen6ert/fastXmlParser#readme"
+}
