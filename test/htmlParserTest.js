@@ -1,15 +1,14 @@
 const HtmlParser = require('../htmlParser.js');
-const html = require('./html.js');
+const htmlbuf = require('./html.js');
 const assert = require('assert');
 
 describe('it should parse correctly complete', () => {
     it('should parse complex html', () => {
         let htmlParser = new HtmlParser();
 
-        let html = html.html;
+        let html = htmlbuf.html;
 
         htmlParser.parse(html);
-
 
     })
 })
