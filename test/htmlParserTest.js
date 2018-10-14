@@ -26,3 +26,18 @@ describe('it should parse a tag', () => {
     })
 })
 
+describe('it should parse the text', () => { 
+    it('parse a text till a new tag starts', (done) => {
+        let htmlParser = new HtmlParser();
+
+        let h3Tag = '>this is a cool text </h3>';
+
+        htmlParser.on('text', (text)=>{
+            assert.equal(text, 'this is a cool text');
+            done();
+        })
+        htmlParser.parseText(h3Tag, 0);
+
+
+    })   
+})

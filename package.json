@@ -1,14 +1,14 @@
 {
-  "name": "faxtxmlparser",
-  "version": "0.0.1",
-  "description": "a real fast xmlParser, code is no fun",
+  "name": "qxmlparser",
+  "version": "0.0.2",
+  "description": "a real fast xmlParser, alpha phase",
   "main": "htmlParser.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/camen6ert/fastXmlParser.git"
+    "url": "git+https://github.com/camen6ert/qXmlParser.git"
   },
   "keywords": [
     "xmlparser",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/camen6ert/fastXmlParser/issues"
   },
-  "homepage": "https://github.com/camen6ert/fastXmlParser#readme"
+  "homepage": "https://github.com/camen6ert/fastXmlParser#readme",
+  "dependencies": {
+    "mocha": "^5.2.0"
+  }
 }

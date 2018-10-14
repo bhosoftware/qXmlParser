@@ -44,7 +44,8 @@ HtmlParser.prototype.parse = function(html) {
                     var jsonTag = this.parseTag(startingTag.trim());
                     this.emit("startingTag", jsonTag);
 
-                    i = this.parseText(html, i)
+                    var parsText = this.parseText.bind(this);
+                    i = parsText(html, i)
                     break;
                 }
 
@@ -60,7 +61,7 @@ HtmlParser.prototype.parse = function(html) {
 };
 
 //parse the text inside starting and closing tag
-HtmlParser.prototype.parseText = (html, i) => {
+HtmlParser.prototype.parseText = function (html, i) {
 
     let text = '';
     while(i < html.length) {
@@ -70,18 +71,14 @@ HtmlParser.prototype.parseText = (html, i) => {
         if(html[i] === '<') {
             text = text.trim();
             if(text.length > 0)
-                console.log('text: '+ text);
+                this.emit('text', text);
             i--;
             break;
         }
         text += html[i];
     }
 
-
-    return {
-        i,
-        text
-    };
+    return i;
 }
 
 //Todo: PerformanceOptimization possible
