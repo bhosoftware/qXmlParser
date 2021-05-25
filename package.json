@@ -1,6 +1,6 @@
 {
   "name": "qxmlparser",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "a real fast xmlParser, alpha phase",
   "main": "htmlParser.js",
   "scripts": {
@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/camen6ert/fastXmlParser#readme",
   "dependencies": {
-    "mocha": "^5.2.0"
+    "mocha": "^8.4.0"
   }
 }
