@@ -1,2 +1,3 @@
 # fastXmlParser
-real fast xml parser, but the code isn't fun
+
+This nodejs xmlParser was programmed because of performance issues with existing ones.

@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/camen6ert/fastXmlParser#readme",
   "dependencies": {
-    "mocha": "^8.4.0"
+    "mocha": "^9.1.4"
   }
 }
